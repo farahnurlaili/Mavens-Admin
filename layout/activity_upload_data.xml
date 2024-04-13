@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff1dc"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/khaki_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Data"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="#800000"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/image"
+                android:src="@drawable/camera_icon"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/title"
+                android:background="@drawable/khaki_border"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Product Name"
+                android:gravity="start|center_vertical"
+                android:textColor="#800000"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/description"
+                android:background="@drawable/khaki_border"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Product Description"
+                android:gravity="start|center_vertical"
+                android:textColor="#800000"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/price"
+                android:background="@drawable/khaki_border"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Product Price"
+                android:gravity="start|center_vertical"
+                android:textColor="#800000"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save Data"
+                android:textSize="18sp"
+                android:id="@+id/addProduct"
+                android:backgroundTint="#800000"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save Image"
+                android:textSize="18sp"
+                android:id="@+id/uploadPic"
+                android:backgroundTint="#800000"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
